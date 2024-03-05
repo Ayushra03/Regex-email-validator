@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: bisque;
+            align-items: center;
+            align-content: center;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .test_string{
+            align-items: center;
+            margin-bottom:2vh;
+            
+        }
+        .regex_pattern{
+            align-items:center;
+            margin:50px;
+        }
+        #btn{
+            margin-top: 20px;
+            background-color: coral;
+            padding-left:30px;
+            padding-right:30px;
+            color:azure;
+            border:none;
+            padding-top:10px;
+            padding-bottom:10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: larger;
+            border-radius: 10px;
+
+
+
+        }
+        #btn:hover{
+            color:coral;
+            background-color:azure;
+            border:coral;
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Regex Matcher</h1>
+    <form action="/regex_result" method="post">
+        <label class="test_string">Enter test string:</label><br>
+        <input type="text" id="test_string" name="test_string"><br>
+        <label class="regex_pattern">Enter regex pattern:</label><br>
+        <input type="text" id="regex_pattern" name="regex_pattern"><br>
+        <input type="submit" value="Match" id="btn">
+    </form>
+</body>
+</html>
